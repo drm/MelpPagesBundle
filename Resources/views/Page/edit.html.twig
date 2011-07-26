@@ -1,0 +1,9 @@
+{% extends 'MelpPagesBundle::layout.html.twig' %}
+
+{% block content %}
+    <form method="post" action="{{ action }}" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+
+        <p><input type="submit" value="save"></p>
+    </form>
+{% endblock %}

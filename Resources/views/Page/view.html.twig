@@ -1,0 +1,13 @@
+{% extends 'MelpPagesBundle::layout.html.twig' %}
+
+{% block actions %}
+    <a href="{{ edit }}">Edit this page</a> | <a href="{{ delete }}">Delete this page</a> | <a href="{{ create }}">Create a new page here</a>
+{% endblock %}
+
+{% block content %}
+    <h1>{{ node.title }}</h1>
+
+    <div>
+        {{ node.content }}
+    </div>
+{% endblock %}
